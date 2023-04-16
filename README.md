@@ -17,8 +17,12 @@ Highlights of my version:
 
 The most significant change is the ability to run commands. This allows you to do things like scripting databases directly into source control with a single command.
 
-### Requirements
+### SQL 2014 Requirements
 ScriptDb requires SMO, SQL Management Objects. You can download this as part of the Microsoft SQL Server Feature Pack. To do the minimal install, go to [the download page][4] and download the files ENU\x64\SharedManagementObjects.msi and ENU\x64\SQLSysClrTypes.msi (substitute x86 if necessary). Install SQLSysClrTypes.msi first.
+
+### SQL 2022 Requirements
+ScriptDb requires [System CLR Types](https://go.microsoft.com/fwlink/?linkid=2108808) and SMO, SQL Management Objects. Beginning with SQL Server 2017 SMO is distributed as the [Microsoft.SqlServer.SqlManagementObjects](https://www.nuget.org/packages/Microsoft.SqlServer.SqlManagementObjects) NuGet package to allow users to develop applications with SMO.
+- Install SQLSysClrTypes.msi first.
 
 ### Examples
 
